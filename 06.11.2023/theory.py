@@ -44,12 +44,42 @@ for key, value in sample_dict.items():  # работаем с ключами и 
     print(f"{key} : {value}")
 print()
 
-print("likes_ice_cream" in sample_dict)
-print("birth_year" in sample_dict)
+print("likes_ice_cream" in sample_dict)  # False
+print("birth_year" in sample_dict)  # False
 
 if "name" in sample_dict:
     print('Yes "name" is in sample_dict')
 
 sample_dict["likes_ice_cream"] = True  # добавляем новый элемент в словарь
 
-print("likes_ice_cream" in sample_dict)
+print("likes_ice_cream" in sample_dict)  # True
+print()
+
+# Основные возможности последовательностей – это проверка
+# принадлежности (т.е. выражения “in” и “not in”)и оператор индексирования
+
+shoplist = ["яблоки", "манго", "морковь", "бананы"]
+name = "Ahmed"
+
+# Операция индексирования
+print("Элемент 0 -", shoplist[0])
+print("Элемент 1 -", shoplist[1])
+print("Элемент 2 -", shoplist[2])
+print("Элемент 3 -", shoplist[3])
+print("Элемент -1 -", shoplist[-1])
+print("Элемент -2 -", shoplist[-2])
+
+print("Символ 0 -", name[0])
+
+# Вырезка из списка
+print("Элементы с 1 по 3:", shoplist[1:3])
+print("Элементы с 2 до конца:", shoplist[2:])
+print("Элементы с 1 по -1:", shoplist[1:-1])
+print("Элементы от начала до конца:", shoplist[:])
+
+print(name[0])
+print(name[-1])
+print(name[1:-1])
+print(name[0:-1:2])
+print(name[::2])
+print(name[::-1])
