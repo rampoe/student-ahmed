@@ -94,4 +94,13 @@ this_is_a_copy = this_is_a_set.copy()
 print(this_is_a_copy)
 
 this_is_a_copy.add("Китай")
+print()
+print(this_is_a_set)
 print(this_is_a_copy)
+print()
+
+print(this_is_a_copy.issuperset(this_is_a_set))
+print(this_is_a_set.issuperset(this_is_a_copy))
+print(this_is_a_set.issubset(this_is_a_copy))
+print(this_is_a_copy.issubset(this_is_a_set))
+print()
