@@ -28,17 +28,31 @@
 
 # ===============================
 
-name = "Ayhan"
+# name = "Ayhan"
 
-if name.find("hm") != -1:
-    print(f'Find returned {name.find("hm")}')
-    print('Yes "hm" is in name')
-else:
-    print(f'Find returned {name.find("hm")}')
-    print('No, "hm" is not in name')
+# if name.find("hm") != -1:  # find возвращает -1, если подстрока не найдена
+#     print(f'Find returned {name.find("hm")}')
+#     print('Yes "hm" is in name')
+# else:
+#     print(f'Find returned {name.find("hm")}')
+#     print('No, "hm" is not in name')
 
-delimeter = " -- "
+# delimeter = "."
 
-mylist = ["Russia", "France", "Germany"]
+# mylist = ["Russia", "France", "Germany"]
 
-print(delimeter.join(mylist))
+# print(delimeter.join(mylist))
+# print(delimeter.join(name))
+
+# ===============================
+
+# print(type(1))
+
+
+class Person:
+    pass
+
+
+p = Person()
+
+print(type(p))

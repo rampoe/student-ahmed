@@ -8,6 +8,9 @@ def pc_or_player():
     return "Player"
 
 
-# x or o
+symbol = input("x or o : ")
 
-# are you ready
+answer = input("ARE YOU READY? y or n: ")
+
+if answer == "y":
+    pass

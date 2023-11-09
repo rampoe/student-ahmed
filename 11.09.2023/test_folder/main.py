@@ -5,4 +5,4 @@
 # for filename in os.listdir():
 #     if filename == "main.py":
 #         continue
-#     os.rename(filename, "rahman.js")
+#     os.rename(filename, f"rahman.js")
