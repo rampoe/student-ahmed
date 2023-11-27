@@ -12,7 +12,10 @@ def create():
 
 
 def read():
-    print(to_do_list)
+    counter = 0
+    for i in to_do_list:
+        counter += 1
+        print(f"{counter}. {i} ")
 
 
 def update():
@@ -45,3 +48,9 @@ while True:
         delete()
     elif choice == 3:
         update()
+
+# ["ahmed", "rahman"]
+
+# 1. ahmed
+# 2. rahman
+# 3. task3
