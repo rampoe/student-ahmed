@@ -14,8 +14,10 @@ contacts = {
 # программа должна прекращать свое исполнение как только все контакнты были показаны и удалены
 
 while contacts:
-    keys_list = list(contacts)
-    random_key = keys_list[random.randrange(len(keys_list))]
+    keys_array = list(contacts)
+    random_key = keys_array[random.randint(0, len(keys_array) - 1)]
     print(f"{random_key}: {contacts[random_key]}")
     input()
     del contacts[random_key]
+
+print("finish!")
